@@ -192,7 +192,6 @@ $.getJSON('P2HP_KADEMANGAN.geojson', function (data) {
     }).addTo(map);
 });
 
-	
 $.getJSON('P2HP_KANIGARAN.geojson', function (data) {
     L.geoJson(data, {
         onEachFeature: function (feature, layer) {
@@ -208,12 +207,13 @@ $.getJSON('P2HP_KANIGARAN.geojson', function (data) {
             return L.circleMarker(latlng, 
             	{className: 'pulse',
             	radius: 5,
-            	color: 'blue'
+            	color: 'red'
             	}
             );
         }
     }).addTo(map);
-});
+});	
+
 	
 });
 </script>
